@@ -1,0 +1,16 @@
+asgiref==3.8.1
+click==8.1.7
+colorama==0.4.6
+Django==5.0.7
+importlib_metadata==8.2.0
+mypy-extensions==1.0.0
+packaging==24.1
+pathspec==0.12.1
+platformdirs==4.2.2
+python-decouple==3.8
+sqlparse==0.5.1
+tomli==2.0.1
+tzdata==2024.1
+yapf==0.40.2
+zipp==3.19.2
+#79aec8
