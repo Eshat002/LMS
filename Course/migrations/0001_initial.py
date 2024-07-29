@@ -11,28 +11,37 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Course',
+            name="Course",
             fields=[
-                ('id',
-                 models.BigAutoField(auto_created=True,
-                                     primary_key=True,
-                                     serialize=False,
-                                     verbose_name='ID')),
-                ('name', models.CharField(max_length=200)),
-                ('creator', models.CharField(max_length=200)),
-                ('type',
-                 models.CharField(choices=[('ux design', 'UX DESIGN'),
-                                           ('video editing', 'VIDEO EDITING'),
-                                           ('web dev', 'WEB DEV')],
-                                  default='web dev',
-                                  max_length=20)),
-                ('start_date', models.DateTimeField()),
-                ('rating', models.DecimalField(decimal_places=1,
-                                               max_digits=2)),
-                ('bookmark', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=200)),
+                ("creator", models.CharField(max_length=200)),
+                (
+                    "type",
+                    models.CharField(
+                        choices=[
+                            ("ux design", "UX DESIGN"),
+                            ("video editing", "VIDEO EDITING"),
+                            ("web dev", "WEB DEV"),
+                        ],
+                        default="web dev",
+                        max_length=20,
+                    ),
+                ),
+                ("start_date", models.DateTimeField()),
+                ("rating", models.DecimalField(decimal_places=1, max_digits=2)),
+                ("bookmark", models.BooleanField(default=False)),
             ],
             options={
-                'ordering': ['-id'],
+                "ordering": ["-id"],
             },
         ),
     ]

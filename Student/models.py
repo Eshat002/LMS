@@ -17,10 +17,9 @@ class Student(models.Model):
 class Reminder(models.Model):
     title = models.CharField(max_length=100)
     time = models.DateTimeField(auto_now_add=False)
-    student = models.ForeignKey(Student,
-                                 blank=True,
-                                 null=True,
-                                 on_delete=models.SET_NULL)
+    student = models.ForeignKey(
+        Student, blank=True, null=True, on_delete=models.SET_NULL
+    )
 
     def __str__(self):
         return self.title
