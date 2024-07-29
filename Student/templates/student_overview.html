@@ -1,1 +1,16 @@
-<h2>student overview</h2>
+{% extends 'base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" type="text/css" href="{% static 'student_overview.css' %}">
+{% endblock style %}
+
+{% block content %}
+    <div id="student-overview"> 
+
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="{% static 'student_overview.js' %}"></script>
+{% endblock scripts %}
