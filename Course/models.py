@@ -14,6 +14,7 @@ class Course(models.Model):
     start_date = models.DateTimeField(auto_now_add=False)
     rating = models.DecimalField(max_digits=2, decimal_places=1)
     bookmark = models.BooleanField(default=False)
+    video = models.FileField(null=True, blank= True)
 
     class Meta:
         ordering = ["-id"]
