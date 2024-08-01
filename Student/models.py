@@ -8,6 +8,7 @@ student_types = [
     ("best", "Best"),
 ]
 
+
 class Student(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     progress = models.PositiveIntegerField(validators=[MaxValueValidator(100)])
