@@ -8,9 +8,20 @@
 {% block content %}
     <div id="student-overview">
      <div class="container-fluid">
+        {% if request.user.is_authenticated %}
+         <div class="headline-container">
+            <h2 class="headline">Overview</h2>
+            <p class="sub-headline">Welcome back, {{request.user}} Your progress is really good. Keep it up</p>
+         </div>
+         {% else %}
+         <p class="sub-headline">Please login first  !</p>
+        
+         {% endif%}
         <div class="row">
             <div class="col-lg-9">
-                <div class="student-analytics-container">analytics</div>
+                <div class="student-analytics-container"> 
+                 {% include 'student_analytics_c.html' %}
+                </div>
                 <div class="featured-course-container">featured</div>
             </div>
             <div class="col-lg-3">student-profile</div>

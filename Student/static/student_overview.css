@@ -1,5 +1,17 @@
 #student-overview {
-  background-color: red !important;
+  background-color: #fbfaf4 !important;
   margin-top: 20px;
   border-radius: 25px;
+}
+
+#student-overview .container-fluid .headline-container .headline {
+  font-weight: 600;
+  font-size: 46px;
+  color: #000;
+}
+
+#student-overview .container-fluid .headline-container .sub-headline {
+  font-weight: 500;
+  font-size: 15px;
+  color: #979ca5;
 }
