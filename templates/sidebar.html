@@ -1,3 +1,39 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'sidebar.css' %}">
 <aside>
-    <h2>sidebar</h2>
+    <div class="logo-container">
+        <img src="{% static 'icons/logo.png' %}" alt="logo">
+    </div>
+
+    <div class="menu-container">
+        <ul class="general-menus">
+            <li>
+                <img src="{% static 'icons/dashboardIcon.png' %}" alt="overview">
+                <a class="menu-links" href="/overview">Overview </a>
+            </li>
+            <li>
+                <img src="{% static 'icons/calenderIcon.png' %}" alt="schedule">
+                <a class="menu-links" href="/schedule">Schedule </a>
+            </li>
+            <li>
+                <img src="{% static 'icons/folderIcon.png' %}" alt="courses">
+                <a class="menu-links" href="/courses">Courses  </a>
+            </li>
+            <li>
+                <img src="{% static 'icons/chartIcon.png' %}" alt="statistic">
+                <a class="menu-links" href="/statistic">Statistic </a>
+            </li>
+            <li>
+                <img src="{% static 'icons/settingsIcon.png' %}" alt="settings">
+                <a class="menu-links" href="/settings">Settings </a>
+            </li>
+        </ul>
+
+        <ul class="logout-menu">
+            <li>
+                <img src="{% static 'icons/logoutIcon.png' %}" alt="logout">
+                <a class="menu-links" href="/logout">Log out  </a>
+            </li>
+        </ul>
+    </div>
 </aside>

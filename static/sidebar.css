@@ -1,0 +1,33 @@
+aside {
+  /* height: 100vh;
+  background-color: red; */
+  position: fixed;
+  height: 100%;
+}
+
+aside .logout-menu {
+  margin-top: 240px;
+}
+
+aside .menu-container ul {
+  list-style-type: none;
+}
+
+aside .menu-container ul li a {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #3c652f;
+  text-decoration: none;
+  padding-left: 12px;
+}
+
+aside .menu-container .general-menus li {
+  margin-top: 35px;
+}
+
+aside .logo-container img {
+  margin-left: 30px;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
