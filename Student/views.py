@@ -17,6 +17,7 @@ def student_analytics_data(request):
             "better_than": student.better_than,
             "score": student.score,
             "type": student.type,
+            "score_image": "/media/images/risk_calculation_panel.png"
         }
         datas.append(student_data)
     return JsonResponse({"data": datas})
