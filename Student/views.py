@@ -8,10 +8,12 @@ def student_overview(request):
     return render(request, "student_overview.html", {})
 
 def student_analytics_data(request):
-    students = Student.objects.all()
+    if not request.user.is_authenticated:
+        return JsonResponse({"login":False})
+
+    student = request.user.student
     datas = []
-    for student in students:
-        student_data = {
+    student_data = {
             "name": student.user.username,
             "progress": student.progress,
             "better_than": student.better_than,
@@ -19,5 +21,5 @@ def student_analytics_data(request):
             "type": student.type,
             "score_image": "/media/images/risk_calculation_panel.png"
         }
-        datas.append(student_data)
+    datas.append(student_data)
     return JsonResponse({"data": datas})
