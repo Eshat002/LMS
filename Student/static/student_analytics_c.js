@@ -16,23 +16,23 @@ const fetchData = async () => {
           <div class="row">
             <div class="col-lg-6">
               <div style="background-color:#FEE05F" class="card-1">
-                <img
-                  style="object-fit:cover"
-                  width="120"
-                  height="120"
+                  <img
+                  style="object-fit:cover;
+                  width="130"
+                  height="130"
                   src="${student.score_image}"
                   alt="student-analytics"
                 />
-                <h3>${student.score} AVERAGE SCORE </h3>
-                <p>Better than ${student.better_than}% of students </p>
+                <h3 class='headline'>${student.score} AVERAGE SCORE </h3>
+                <p class='sub-headline'>Better than ${student.better_than}% of students </p>
               </div>
             </div>
             <div class="col-lg-6">
               <div style="background-color:#FFFFFF" class="card-2">
                 <div class="d-flex justify-content-between">
                   <div>
-                    <h3>Student Analytics</h3>
-                    <p>${student.type}</p>
+                    <h3 class='headline'>Student Analytics</h3>
+                    <p class='sub-headline'>${student.type}</p>
                   </div>
                   <div class="svg-container">
                     <svg
@@ -59,7 +59,7 @@ const fetchData = async () => {
                   >
                     <circle cx="4" cy="4" r="4" fill="#FFC000" />
                   </svg>
-                  <span>progress</span>
+                  <span class='progress-title'>progress</span>
                   <div
                     class="progress"
                     role="progressbar"

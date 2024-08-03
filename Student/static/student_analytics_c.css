@@ -1,0 +1,54 @@
+#student-analytics .card-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 25px;
+  border-radius: 20px;
+  min-height: 280px;
+  box-shadow: 5px 5px 10px rgb(226, 226, 226);
+}
+
+#student-analytics .card-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 40px 25px;
+  border-radius: 20px;
+  min-height: 280px;
+  box-shadow: 5px 5px 10px rgb(226, 226, 226);
+}
+
+#student-analytics .card-1 .headline {
+  font-size: 24px;
+  font-weight: 700;
+  color: #202c40;
+}
+
+#student-analytics .card-1 .sub-headline {
+  font-size: 15px;
+  font-weight: 500;
+  color: #202c40;
+}
+
+#student-analytics .card-2 .headline {
+  font-size: 20px;
+  font-weight: 700;
+  color: #121212;
+  text-transform: uppercase;
+}
+
+#student-analytics .card-2 .sub-headline {
+  font-size: 14px;
+  font-weight: 700;
+  color: #979ca5;
+  text-transform: uppercase;
+}
+
+#student-analytics .card-2 .progress-container .progress-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000;
+  display: inline-block;
+  margin-bottom: 8px;
+}
