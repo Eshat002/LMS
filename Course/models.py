@@ -15,6 +15,8 @@ class Course(models.Model):
     rating = models.DecimalField(max_digits=2, decimal_places=1)
     bookmark = models.BooleanField(default=False)
     video = models.FileField(null=True, blank=True)
+    featured = models.BooleanField(default=False)
+    cover = models.ImageField(upload_to="course_cover/", null=True, blank=True)
 
     class Meta:
         ordering = ["-id"]
