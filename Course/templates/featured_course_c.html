@@ -2,6 +2,21 @@
 
 <link rel="stylesheet" href="{% static 'featured_course_c.css' %}">
 
-<div id="featured_course"></div>
+<div id="featured-course">
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Course name</th>
+            <th scope="col">Start</th>
+            <th scope="col">Rating</th>
+            <th scope="col">Type</th>
+            <th scope="col">Bookmark</th>
+          </tr>
+        </thead>
+        <tbody id = 'featured-course-container'>
+        </tbody>
+      </table>
+</div>
 
 <script src="{% static 'featured_course_c.js' %}"></script>
