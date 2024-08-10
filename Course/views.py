@@ -15,6 +15,7 @@ def featured_course(request):
             "type":course.type,
             "bookmark":course.bookmark,
             "creator":course.creator,
+            "cover": course.cover.url,
         }
         data.append(course_data)
     return JsonResponse({"data": data})

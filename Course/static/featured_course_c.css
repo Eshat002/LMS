@@ -1,0 +1,61 @@
+#featured-course .headline-container h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: #121212;
+}
+#featured-course .headline-container a {
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffd143;
+  text-decoration: none;
+}
+
+#featured-course .table thead tr th {
+  color: #94918a !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#featured-course .table thead tr th {
+  color: #94918a !important;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#featured-course .table tbody tr td.course-name-box .text-container h4 {
+  color: #121212;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#featured-course .table tbody tr td.course-name-box .text-container h6 {
+  color: #94918a;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+#featured-course .table tbody tr td.course-start-box {
+  color: #121212;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+#featured-course .table tbody tr td.course-rating-box {
+  color: #ffc000;
+  font-weight: 500;
+  font-size: 17px;
+}
+#featured-course .table tbody tr td.course-type-box button {
+  color: #121212;
+  font-weight: 600;
+  font-size: 12px;
+  border: none;
+  padding: 8px 20px 6px 20px;
+  background-color: #f6efd8;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+#featured-course .table {
+  --bs-table-bg: rgba(0, 123, 255, 0) !important;
+}
