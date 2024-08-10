@@ -1,11 +1,18 @@
 from django.db import models
 from django.contrib.auth.models import User
 from django.core.validators import MaxValueValidator
+from django.utils.dateformat import format
 
 student_types = [
     ("avarage", "Avarage"),
     ("good", "Good"),
     ("best", "Best"),
+]
+
+student_roles = [
+    ("web developer", "Web Developer"),
+    ("ux/ui designer", "UX/UI developer"),
+    ("hacker", "hacker"),
 ]
 
 
@@ -17,6 +24,10 @@ class Student(models.Model):
         validators=[MaxValueValidator(100)], default=0
     )
     type = models.CharField(choices=student_types, max_length=20, default="good")
+    profile_pic = models.ImageField(upload_to="profile_pic", null=True, blank=True)
+    role = models.CharField(
+        choices=student_roles, max_length=20, default="web developer"
+    )
 
     class Meta:
         ordering = ["-id"]
@@ -31,6 +42,10 @@ class Reminder(models.Model):
     student = models.ForeignKey(
         Student, blank=True, null=True, on_delete=models.SET_NULL
     )
+
+    @property
+    def formatted_time(self):
+        return format(self.time, "j F g a")
 
     def __str__(self):
         return self.title

@@ -4,6 +4,7 @@ Course_types = [
     ("ux design", "UX DESIGN"),
     ("video editing", "VIDEO EDITING"),
     ("web dev", "WEB DEV"),
+    ("hacking", "HACKING"),
 ]
 
 

@@ -9,12 +9,12 @@ def featured_course(request):
     data = []
     for course in courses:
         course_data = {
-            "name":course.name,
-            "start":date_format(course.start_date,'M j'),
-            "rating":course.rating,
-            "type":course.type,
-            "bookmark":course.bookmark,
-            "creator":course.creator,
+            "name": course.name,
+            "start": date_format(course.start_date, "M j"),
+            "rating": course.rating,
+            "type": course.type,
+            "bookmark": course.bookmark,
+            "creator": course.creator,
             "cover": course.cover.url,
         }
         data.append(course_data)
