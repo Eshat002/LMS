@@ -2,15 +2,17 @@
   background-color: #fbfaf4 !important;
   margin-top: 20px;
   border-radius: 25px;
+  /* box-shadow: 5px 5px 10px rgb(226, 226, 226); */
+  margin-right: 10px;
 }
 
-#student-overview .container-fluid .headline-container .headline {
+#student-overview .custom-container-fluid .headline-container .headline {
   font-weight: 600;
-  font-size: 46px;
+  font-size: 40px;
   color: #000;
 }
 
-#student-overview .container-fluid .headline-container .sub-headline {
+#student-overview .custom-container-fluid .headline-container .sub-headline {
   font-weight: 500;
   font-size: 15px;
   color: #979ca5;

@@ -7,18 +7,17 @@
 
 {% block content %}
     <div id="student-overview">
-        <div class="container-fluid">
-            <div class="headline-container">
-                {% if request.user.is_authenticated %}
-                    <h2 class="headline">Overview</h2>
-                    <p class="sub-headline">Welcome back, {{request.user}} Your progress is really good. Keep it up</p>
-                {% else %}
-                    <p class="sub-headline">Please login first  !</p>
-                {% endif%}
-            </div>
-
-            <div class="row gx-4">
-                <div class="col-lg-8">
+        <div class="custom-container-fluid">
+            <div class="row">
+                <div style="padding:20px 40px" class="col-lg-8">
+                    <div class="headline-container">
+                        {% if request.user.is_authenticated %}
+                            <h2 class="headline">Overview</h2>
+                            <p class="sub-headline">Welcome back, {{request.user}} Your progress is really good. Keep it up</p>
+                        {% else %}
+                            <p class="sub-headline">Please login first  !</p>
+                        {% endif%}
+                    </div>
                     <div class="student-analytics-container">
                         {% include 'student_analytics_c.html' %}
                     </div>

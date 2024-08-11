@@ -2,6 +2,8 @@
   background-color: #f6f2dd;
   height: 100%;
   padding: 20px;
+  border-radius: 25px;
+  padding: 50px 20px;
 }
 
 #student-profile #student-profile-card .name {
@@ -21,4 +23,5 @@
 
 #student-profile #student-profile-card {
   border-bottom: #979ca5 1px solid;
+  padding-bottom: 20px;
 }
