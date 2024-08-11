@@ -29,7 +29,6 @@ def student_analytics_data(request):
 
 def student_profile_data(request):
     student = request.user.student
-    datas = []
     reminders = student.reminder_set.all()
 
     formatted_reminders = [
@@ -40,7 +39,8 @@ def student_profile_data(request):
     student_profile_data = {
         "name": student.user.username,
         "role": student.role,
+        "profile_pic":student.profile_pic.url,
         "reminders": formatted_reminders,
     }
-    datas.append(student_profile_data)
-    return JsonResponse({"data": datas})
+ 
+    return JsonResponse({"data": student_profile_data})

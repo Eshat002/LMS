@@ -1,4 +1,24 @@
-#student_profile {
+#student-profile {
   background-color: #f6f2dd;
   height: 100%;
+  padding: 20px;
+}
+
+#student-profile #student-profile-card .name {
+  font-size: 36px;
+  font-weight: 600;
+  color: #121212;
+  text-transform: lowercase;
+  margin-top: 15px;
+}
+
+#student-profile #student-profile-card .role {
+  font-size: 20px;
+  font-weight: 500;
+  color: #979ca5;
+  text-transform: capitalize;
+}
+
+#student-profile #student-profile-card {
+  border-bottom: #979ca5 1px solid;
 }
