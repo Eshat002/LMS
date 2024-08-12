@@ -3,7 +3,7 @@
   height: 100%;
   padding: 20px;
   border-radius: 25px;
-  padding: 50px 20px;
+  padding: 50px 30px;
 }
 
 #student-profile #student-profile-card .name {
@@ -58,4 +58,20 @@
   display: flex;
   justify-content: space-between;
   padding: 20px 0px;
+}
+
+#student-profile #banner-container {
+  background-color: #ffec98;
+  padding: 20px 30px;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+
+#student-profile #banner-container .headline-container h3 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #121212;
+  font-style: italic;
+  margin-top: 5px;
+  margin-right: 15px;
 }
