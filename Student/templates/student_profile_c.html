@@ -2,7 +2,21 @@
 <link rel="stylesheet" href="{% static 'student_profile_c.css' %}">
 <div id="student-profile">
     <div class="text-center" id="student-profile-card"></div>
-    <div id="reminder-container"></div>
+    <div id="reminders">
+        <div class="headline-container d-flex">
+             <h2 class="headline">Reminders</h2>
+             <div class="headline-icon-container">
+                
+<svg width="43" height="43" viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="21.5" cy="21.5" r="21.5" fill="white"/>
+    <path d="M21.5239 10.6425C17.5703 10.6425 14.3572 13.8555 14.3572 17.8092V21.2611C14.3572 21.9897 14.0467 23.1005 13.6764 23.7217L12.3028 26.003C11.4547 27.4125 12.04 28.9772 13.5928 29.5028C18.7409 31.2228 24.295 31.2228 29.4431 29.5028C30.8884 29.025 31.5214 27.3169 30.7331 26.003L29.3595 23.7217C29.0011 23.1005 28.6906 21.9897 28.6906 21.2611V17.8092C28.6906 13.8675 25.4656 10.6425 21.5239 10.6425Z" stroke="#292D32" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"/>
+      <circle cx="27.9999" cy="14" r="4" fill="#FFD700"/>
+    </svg>
+    
+             </div>
+        </div>
+        <div id="reminder-container"></div>
+    </div>
     <div id="banner-container"></div>
 </div>
 <script src="{% static 'student_profile_c.js' %}"></script>

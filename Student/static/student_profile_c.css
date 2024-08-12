@@ -25,3 +25,37 @@
   border-bottom: #979ca5 1px solid;
   padding-bottom: 20px;
 }
+
+#student-profile #reminder-container .single-reminder {
+  background-color: #f7f7f7;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#student-profile #reminder-container .single-reminder .title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #303030;
+}
+#student-profile #reminder-container .single-reminder .time {
+  font-size: 12px;
+  font-weight: 500;
+  color: #bdbdbd;
+  margin-top: -5px;
+}
+
+#student-profile #reminders .headline-container .headline {
+  font-size: 22px;
+  font-weight: 600;
+  color: #121212;
+  margin-top: 8px;
+}
+#student-profile #reminders .headline-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0px;
+}
